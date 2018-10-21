@@ -1,0 +1,179 @@
+/* Portfolio
+ Created by Brian Christian M. Lopez
+ Lipa City, Batangas
+ September 2018 */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+	color: #222;
+	padding-bottom: 0;
+}
+
+.logo {
+	width: 170px;
+	height: 50px;
+}
+
+.navbar {
+	padding: .8rem;
+}
+
+.navbar-nav li {
+	padding-right: 80px;
+}
+
+#bigpic {
+	width: 100%;
+	height: 36rem;
+}
+
+.carousel-caption {
+	top: 30rem;
+	text-align: right;
+}
+
+.btn-primary {
+	background-color: #6648b1;
+	border: 1px solid #6648b1;
+}
+
+.btn-primary hover {
+	background-color: #563d7c;
+	border: 1px solid #563d7c;
+}
+
+#welcome {
+	background-color: lightgrey;
+}
+
+.social a {
+	font-size: 4.5em;
+	padding: 3rem;
+}
+
+.fa-facebook {
+	color: #3b5998;
+}
+
+.fa-twitter {
+	color: #00aced;
+}
+
+.fa-google-plus-g {
+	color: #dd4d39;
+}
+
+.fa-instagram {
+	color: #517fa8;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-google-plus-g:hover,
+.fa-instagram:hover {
+	color: #d5d5d5;
+}
+
+footer {
+	width: 100%;
+	background-color: #3f3f3f;
+	color: #d5d5d5;
+}
+
+footer a {
+	color: #d5d5d5;
+}
+
+.contact-form{
+	background:rgba(0,0,0, .6);
+	color:white;
+	margin-top: 100px;
+	padding: 10px;
+	box-shadow: 0px 0px 10px 3px grey;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+  }
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 45%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 350%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 400;
+    padding-bottom: .2rem; 
+  }
+
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+
+  #profilepic {
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+
+  .display-4 {
+    font-size: 200%;
+  }
+
+  .social a {
+      font-size: 2.5em;
+      padding: 1.2rem;
+    }
+
+}
+@media (max-width: 576px) {
+
+.carousel-caption {
+    top: 75%;
+    left: 70%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 250%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 110%;
+  }
+
+  .carousel-caption .btn {
+    font-size: 65%;
+    padding: 4px 8px;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  .display-4 {
+    font-size: 160%;
+  }
+
+  .social a {
+      font-size: 2em;
+      padding: .7rem;
+    }
+
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+	padding: 1rem;
+}
